@@ -1,0 +1,37 @@
+@media screen and (max-width: 800px) {
+  .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+  }
+  .nav-bar:after {
+    display: none;
+  }
+  .nav-item-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transform: translateY(-400px);
+    background: linear-gradient(120deg, #eee2c3, #d3c4a2);
+    transition: 500ms;
+    width: 100%;
+    z-index: -5;
+    position: absolute;
+  }
+  .nav-item-open {
+    top: 60px;
+    position: absolute;
+    transform: none;
+    flex-direction: column;
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    background: linear-gradient(120deg, #eee2c3, #d3c4a2);
+    transition: 500ms;
+    transform-origin: top;
+    z-index: 0;
+  }
+}

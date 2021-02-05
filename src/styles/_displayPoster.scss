@@ -1,0 +1,50 @@
+.poster-open {
+  height: 80%;
+  cursor: initial;
+  justify-content: none;
+  position: relative;
+  padding: 35px;
+  background-image: url(./images/poster1.png);
+  background-position: center;
+  background-size: none;
+  > img {
+    width: 60%;
+  }
+  > h1 {
+    position: absolute;
+    top: 10px;
+    font-size: 65px;
+  }
+  > h3 {
+    margin-top: 65px;
+    font-size: 55px;
+  }
+  > div {
+    display: flex;
+    margin: 10px 45px;
+    gap: 25px;
+    > p {
+      font-size: 25px;
+    }
+  }
+}
+.board-open {
+  background: url(./images/wood.jpg);
+  border: solid 6px;
+  border-image: url(./images//steel.jpg) 50;
+  width: 80%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  grid: repeat(115, 270px) / repeat(auto-fill, 200px);
+}
+.ingredient-list {
+  font-size: 25px;
+  list-style: none;
+}
+.leave-btn {
+  position: absolute;
+  top: -15px;
+}

@@ -1,0 +1,61 @@
+.board {
+  background: url(./images/wood.jpg);
+  /* border: 15px url(./images/steel.jpg) solid; */
+  border: solid 6px;
+  border-image: url(./images//steel.jpg) 50;
+  width: 80%;
+  height: 90%;
+  display: grid;
+  justify-content: center;
+  grid: repeat(115, 270px) / repeat(auto-fill, 200px);
+  position: relative;
+  overflow: scroll;
+  padding-top: 40px;
+}
+.board::-webkit-scrollbar {
+  display: none;
+}
+.poster {
+  font-family: beyond, serif;
+  color: rgb(92, 22, 22);
+  background-image: url(./images/poster1.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+  > h3 {
+    font-size: 25px;
+    font-weight: 100;
+  }
+  > h1 {
+    font-weight: 900;
+    font-size: 33px;
+    font-family: "Times New Roman", Times, serif;
+  }
+  > * {
+    margin: 0 15px 0 0;
+  }
+}
+.poster-img {
+  width: 60%;
+  border: 1px solid black;
+  /* filter: opacity(0.8) grayscale(70%); */
+  filter: opacity(0.6) grayscale(40%);
+}
+
+.search {
+  font-family: beyond, serif;
+  position: absolute;
+  height: 30px;
+  width: 250px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 25px;
+  background-color: #e1d3b3;
+  border: solid 6px;
+  border-top: none;
+  border-image: url(./images//steel.jpg) 50;
+}
