@@ -1,50 +1,213 @@
-.poster-open {
-  height: 80%;
-  cursor: initial;
-  justify-content: none;
-  position: relative;
-  padding: 35px;
-  background-image: url(./images/poster1.png);
-  background-position: center;
-  background-size: none;
-  > img {
-    width: 60%;
-  }
-  > h1 {
-    position: absolute;
-    top: 10px;
-    font-size: 65px;
-  }
-  > h3 {
-    margin-top: 65px;
-    font-size: 55px;
-  }
-  > div {
-    display: flex;
-    margin: 10px 45px;
-    gap: 25px;
-    > p {
-      font-size: 25px;
-    }
-  }
+@import "./paperPolygon";
+
+@mixin nail {
+  content: "";
+  position: absolute;
+  top: 3%;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-image: url(./images/nail.png);
+  background-size: cover;
 }
+@mixin line {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: rgb(92, 22, 22);
+  top: 85%;
+  transform: translateY(-100%);
+  left: 0;
+}
+
 .board-open {
   background: url(./images/wood.jpg);
   border: solid 6px;
   border-image: url(./images//steel.jpg) 50;
   width: 80%;
-  height: 90%;
+  height: 95%;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  grid: repeat(115, 270px) / repeat(auto-fill, 200px);
 }
-.ingredient-list {
-  font-size: 25px;
-  list-style: none;
+.display-poster {
+  max-width: 1300px;
+  width: 90%;
+  height: 90%;
+  display: grid;
+  grid: repeat(10, 1fr) / repeat(10, 1fr);
+  font-size: 18px;
+  gap: 25px;
+  > div {
+    color: rgb(92, 22, 22);
+    background-size: cover;
+    background-position: center;
+    background-image: url(./images/paper2.jpg);
+    @include paperPolygon();
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.display-base {
+  padding: 15px;
+  text-align: center;
+  position: relative;
+  grid-column: 1 / 7;
+  grid-row: 1 / 11;
+  > h1 {
+    font-size: 5.5em;
+    font-family: western, serif;
+    font-weight: 200;
+    position: relative;
+  }
+  h1::after {
+    @include line();
+  }
+  > h3 {
+    font-size: 3.5em;
+    font-family: beyond;
+    font-weight: 200;
+  }
+}
+.display-ingredient-list {
+  position: relative;
+  grid-column: 7 / 11;
+  grid-row: 1 / 6;
+  font-family: beyond, serif;
+  font-size: 1.4em;
+  h1 {
+    font-family: western, serif;
+    font-weight: 100;
+    position: relative;
+  }
+  h1::after {
+    @include line();
+    height: 3px;
+    top: 90%;
+  }
+  ul {
+    font-size: 1.1em;
+    margin: 0 10%;
+  }
+}
+.display-instructions {
+  position: relative;
+  font-family: beyond, serif;
+  grid-column: 7 / 11;
+  grid-row: 6 / 11;
+  font-size: 1.4em;
+  padding: 5%;
+  text-align: justify;
+  h1 {
+    font-family: western, serif;
+    font-weight: 100;
+    position: relative;
+    flex-basis: s;
+  }
+  h1::after {
+    @include line();
+    height: 3px;
+    top: 90%;
+  }
 }
 .leave-btn {
   position: absolute;
-  top: -15px;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 0 15% 50% 15%;
+  background-image: url(./images/steel.jpg);
+  border-top: none;
+  border-left: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1;
 }
+.display-poster > div::after {
+  @include nail;
+  right: 5%;
+}
+.display-poster > div::before {
+  @include nail;
+  left: 5%;
+}
+
+@media screen and (max-width: 1200px) {
+  .board-open {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .board-open {
+    width: 98%;
+    height: 98;
+  }
+  .display-poster {
+    width: 97%;
+    height: 97%;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .board-open {
+    width: 98%;
+    height: auto;
+  }
+  .display-poster {
+    width: 97%;
+    height: 97%;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    > div {
+      padding: 10%;
+    }
+  }
+}
+
+/* @media screen and (max-width: 1400px) {
+  .board-open {
+    width: 90%;
+    height: 95%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .board-open {
+    width: 98%;
+    margin: 0 1%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .display-poster {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    > div {
+      width: 100%;
+      height: 100%;
+      margin: 0 15px;
+    }
+  }
+  .board-open {
+    overflow-y: auto;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .display-poster {
+    width: 100%;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+    > div {
+      height: 90%;
+      width: 120%;
+    }
+  }
+} */

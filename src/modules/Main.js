@@ -11,8 +11,7 @@ export default function Main() {
   useEffect(() => {
     if (picked) {
       URL = `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${picked}`;
-    }
-    if (search) {
+    } else {
       URL = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${search}`;
     }
     fetch(URL)

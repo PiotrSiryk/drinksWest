@@ -3,10 +3,8 @@
   padding: 0;
 }
 
-@font-face {
-  font-family: "beyond";
-  src: local("beyond"), url(./fonts/Beyond-Wonderland.ttf) format("truetype");
-}
+@import "./styles/fonts";
+@import "./styles/paperPolygon";
 
 body {
   /* background-image: url(./images/stone.jpg); */
@@ -34,8 +32,8 @@ body {
   > ul {
     display: flex;
     justify-content: space-between;
-    gap: 15%;
     list-style: none;
+    font-size: 35px;
   }
 }
 .nav-bar:after {
@@ -68,3 +66,4 @@ body {
 @import "./styles/media";
 @import "./styles/poster";
 @import "./styles/displayPoster";
+@import "./styles/quotes";
