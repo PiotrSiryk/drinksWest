@@ -16,7 +16,7 @@ export default function NavBar() {
           <Link to="/drinks">Drinks</Link>
         </li>
         <li>
-          <Link to="/quotes">Words Of Wisdom</Link>
+          <Link to="/quotes">Funny</Link>
         </li>
       </ul>
       <button className="nav-btn" onClick={() => setMobile(!mobile)}>

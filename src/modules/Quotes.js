@@ -13,9 +13,9 @@ export default function Quotes() {
     <main className="quotes-main">
       <div className="quotes">
         {quotes.map((element, index) => {
-          const topAl = `${Math.random() * 150}px`;
-          const leftAl = `${Math.random() * 110}px`;
-          const transform = `rotate(${Math.random() * 140 - 70}deg)`;
+          const topAl = `${Math.random() * 150 - 60}px`;
+          const leftAl = `${Math.random() * 110 - 50}px`;
+          const transform = `rotate(${Math.random() * 80 - 40}deg)`;
           return (
             <section key={index}>
               <div
