@@ -1,0 +1,59 @@
+{
+  "quotes": [
+    {
+      "name": "Benjamin Franklin",
+      "body": "Beer is proof that God loves us and wants us to be happy",
+      "image": "https://thumbs-prod.si-cdn.com/813Ge1BvPaDkCYCnqxRVXUZC-LQ=/fit-in/1600x0/https://public-media.si-cdn.com/filer/20110520090044benjamin-franklin-520.jpg"
+    },
+    {
+      "name": "Frank Sinatra",
+      "body": "Alcohol may be man's worst enemy, but the bible says love your enemy",
+      "image": "https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTE4MDAzNDEwNjg4MTE2MjM4/frank-sinatra-9484810-3-402.jpg"
+    },
+    {
+      "name": "W.C. Fields",
+      "body": "Everybody's got to believe in something. I believe I'll have another beer.",
+      "image": "https://nypost.com/wp-content/uploads/sites/2/2014/03/wcfields.jpg?quality=80&strip=all&w=371&h=410&crop=1"
+    },
+    {
+      "name": "Plato",
+      "body": "He was a wise man who invented beer.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Solon.jpg/160px-Solon.jpg"
+    },
+    {
+      "name": "H.L. Mencken",
+      "body": "24 hours in a day. 24 beers in a case. Coincidence? I think not.",
+      "image": "https://allthatsinteresting.com/wordpress/wp-content/uploads/2017/04/hl-mencken-on-the-american-public.jpg"
+    },
+    {
+      "name": "Winston Churchill",
+      "body": "I have taken more out of alcohol than alcohol has taken out of me.",
+      "image": "https://cdn.britannica.com/35/7535-004-99D14F9B/Winston-Churchill-Yousuf-Karsh-1941.jpg"
+    },
+    {
+      "name": "Brendan Behan",
+      "body": "I only take a drink on two occasions – when I’m thirsty and when I’m not",
+      "image": "https://lh3.googleusercontent.com/proxy/3_0i59rM6TFCgjHUtjyvd4HHJ1KlPWZ2KtpPJZs9MqzMnG9Na3Z3WVV9ZIGHLJqmBM0_3YXRW3GPtMmGsufldr44ItJYmw3dQm5ZRBna"
+    },
+    {
+      "name": "George F. Burns",
+      "body": "It takes only one drink to get me drunk. The trouble is, I can’t remember if it’s the thirteenth or the fourteenth",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/George_Burns_Allan_Warren.jpg/220px-George_Burns_Allan_Warren.jpg"
+    },
+    {
+      "name": "W.C Fields",
+      "body": "I cook with wine, sometimes I even add it to the food.",
+      "image": "https://nypost.com/wp-content/uploads/sites/2/2014/03/wcfields.jpg?quality=80&strip=all&w=371&h=410&crop=1"
+    },
+    {
+      "name": "Louis Pasteur",
+      "body": "A bottle of wine contains more philosophy that all the books in the world.",
+      "image": "https://www.sapaviva.com/wp-content/uploads/2017/06/12S.-Louis-Pasteur-1822-1895-336x336.jpg"
+    },
+    {
+      "name": "Homer Simpson",
+      "body": "Here’s to alcohol, the cause of, and solution to all life’s problems.",
+      "image": "http://www.geocities.ws/onlysimpsons/homer014-2.gif"
+    }
+  ]
+}
