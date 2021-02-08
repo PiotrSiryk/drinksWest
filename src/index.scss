@@ -2,23 +2,25 @@
   margin: 0;
   padding: 0;
 }
+$dark-brown: #2e1303;
 
 @import "./styles/fonts";
 @import "./styles/paperPolygon";
 
 body {
-  /* background-image: url(./images/stone.jpg); */
   background-color: #2e1303;
   background-size: cover;
   height: 100vh;
   width: 100vw;
 }
 .nav-bar {
-  background: linear-gradient(120deg, #eee2c3, #d3c4a2);
+  background-image: url(./images/navbar.jpg);
+  background-size: cover;
+
   background-size: cover;
   height: 60px;
   font-size: 40px;
-  color: rgb(112, 29, 29);
+  color: black;
   position: relative;
   display: flex;
   justify-content: space-around;
@@ -30,6 +32,7 @@ body {
     font-size: 55px;
   }
   > ul {
+    gap: 0 25px;
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -67,3 +70,4 @@ body {
 @import "./styles/poster";
 @import "./styles/displayPoster";
 @import "./styles/quotes";
+@import "./styles/link";

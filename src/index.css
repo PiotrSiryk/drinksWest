@@ -14,7 +14,6 @@
 }
 
 body {
-  /* background-image: url(./images/stone.jpg); */
   background-color: #2e1303;
   background-size: cover;
   height: 100vh;
@@ -22,11 +21,12 @@ body {
 }
 
 .nav-bar {
-  background: linear-gradient(120deg, #eee2c3, #d3c4a2);
+  background-image: url(./images/navbar.jpg);
+  background-size: cover;
   background-size: cover;
   height: 60px;
   font-size: 40px;
-  color: #701d1d;
+  color: black;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -46,6 +46,7 @@ body {
 }
 
 .nav-bar > ul {
+  gap: 0 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -624,5 +625,33 @@ body {
 
 section {
   position: relative;
+}
+
+.link-list > li a {
+  color: #2e1303;
+  font-family: western;
+  font-size: 45px;
+  border-left: 2px solid #2e1303;
+  border-right: 2px solid #2e1303;
+  padding: 0 15px;
+}
+
+.link-list > li a:link {
+  text-decoration: none;
+}
+
+.link-list > li a:visited {
+  text-decoration: none;
+}
+
+.link-list > li a:hover {
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  color: #5e2706;
+  text-decoration: underline;
+}
+
+.link-list > li a:active {
+  color: #be4e0c;
 }
 /*# sourceMappingURL=index.css.map */

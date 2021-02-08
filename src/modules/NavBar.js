@@ -7,8 +7,12 @@ export default function NavBar() {
 
   return (
     <nav className="nav-bar">
-      <h4>SunFlower</h4>
-      <ul className={mobile ? "nav-item-list" : "nav-item-open"}>
+      <h4>Bull's Horn Saloon</h4>
+      <ul
+        className={
+          mobile ? "nav-item-list link-list" : "nav-item-open link-list"
+        }
+      >
         <li>
           <Link to="/">Home</Link>
         </li>

@@ -1,0 +1,26 @@
+.link-list {
+  > li {
+    a {
+      color: $dark-brown;
+      font-family: western;
+      font-size: 45px;
+      border-left: 2px solid $dark-brown;
+      border-right: 2px solid $dark-brown;
+      padding: 0 15px;
+    }
+    a:link {
+      text-decoration: none;
+    }
+    a:visited {
+      text-decoration: none;
+    }
+    a:hover {
+      transition: 500ms;
+      color: lighten($dark-brown, 10);
+      text-decoration: underline;
+    }
+    a:active {
+      color: lighten($dark-brown, 30);
+    }
+  }
+}
