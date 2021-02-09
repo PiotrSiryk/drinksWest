@@ -1,5 +1,4 @@
 import React from "react";
-import ben from "../images/photos/ben.jpg";
 import { quotes } from "../quotes.json";
 
 export default function Quotes() {

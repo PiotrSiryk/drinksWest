@@ -1,6 +1,5 @@
 .board {
   background: url(./images/wood.jpg);
-  /* border: 15px url(./images/steel.jpg) solid; */
   border: solid 6px;
   border-image: url(./images//steel.jpg) 50;
   width: 80%;
@@ -9,11 +8,9 @@
   justify-content: center;
   grid: repeat(115, 270px) / repeat(auto-fill, 200px);
   position: relative;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   padding-top: 40px;
-}
-.board::-webkit-scrollbar {
-  display: none;
 }
 .poster {
   transition: 300ms;
@@ -53,7 +50,6 @@
 }
 .poster-img {
   width: 60%;
-  /* filter: opacity(0.8) grayscale(70%); */
   filter: opacity(0.9) grayscale(30%);
   mask-image: -webkit-radial-gradient(
     center,
@@ -79,4 +75,17 @@
   border: solid 6px;
   border-top: none;
   border-image: url(./images//steel.jpg) 50;
+}
+
+@media screen and (max-width: 1000px) {
+  .board {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .board {
+    width: 100%;
+    grid: repeat(115, 270px) / repeat(auto-fill, 180px);
+    border-width: 2px;
+  }
 }

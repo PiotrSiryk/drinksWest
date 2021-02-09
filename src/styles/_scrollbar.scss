@@ -1,0 +1,15 @@
+::-webkit-scrollbar {
+  scroll-margin: 50px 0 0 50px;
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: #fcedc6;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb {
+  background: $dark-brown;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: lighten($dark-brown, 5);
+}

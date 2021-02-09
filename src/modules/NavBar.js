@@ -1,16 +1,20 @@
 import React, { useState, useEffect } from "react";
 import { TiThMenu } from "react-icons/ti";
 import { Link } from "react-router-dom";
+import horn from "./../images/bull.png";
 
 export default function NavBar() {
   const [mobile, setMobile] = useState(false);
 
   return (
     <nav className="nav-bar">
-      <h4>Bull's Horn Saloon</h4>
+      <div>
+        <img src={horn} alt="" className="company-logo" />
+        <h4 className="company-name">Bull's Horn Saloon</h4>
+      </div>
       <ul
         className={
-          mobile ? "nav-item-list link-list" : "nav-item-open link-list"
+          !mobile ? "nav-item-list link-list" : "nav-item-open link-list"
         }
       >
         <li>
