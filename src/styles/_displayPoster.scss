@@ -26,15 +26,16 @@
   border: solid 6px;
   border-image: url(./images//steel.jpg) 50;
   width: 80%;
-  height: 95%;
+  min-height: 95%;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  max-width: 1500px;
 }
 .display-poster {
-  max-width: 1300px;
   width: 90%;
+  max-width: 1300px;
   height: 90%;
   display: grid;
   grid: repeat(10, 1fr) / repeat(10, 1fr);
@@ -52,7 +53,6 @@
   }
 }
 .display-base {
-  padding: 15px;
   text-align: center;
   position: relative;
   grid-column: 1 / 7;
@@ -145,11 +145,10 @@
 @media screen and (max-width: 850px) {
   .board-open {
     width: 98%;
-    height: 98;
+    height: 98%;
   }
   .display-poster {
     width: 97%;
-    height: 97%;
     gap: 10px;
   }
 }
@@ -164,50 +163,5 @@
     gap: 10px;
     display: flex;
     flex-direction: column;
-    > div {
-      padding: 10%;
-    }
   }
 }
-
-/* @media screen and (max-width: 1400px) {
-  .board-open {
-    width: 90%;
-    height: 95%;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .board-open {
-    width: 98%;
-    margin: 0 1%;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .display-poster {
-    font-size: 15px;
-    display: flex;
-    flex-direction: column;
-    > div {
-      width: 100%;
-      height: 100%;
-      margin: 0 15px;
-    }
-  }
-  .board-open {
-    overflow-y: auto;
-  }
-}
-@media screen and (min-width: 1600px) {
-  .display-poster {
-    width: 100%;
-    font-size: 22px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 55px;
-    > div {
-      height: 90%;
-      width: 120%;
-    }
-  }
-} */

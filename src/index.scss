@@ -9,9 +9,9 @@ $dark-brown: #2e1303;
 
 body {
   background-color: $dark-brown;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
-  overflow: hidden;
+  overflow: auto;
 }
 .nav-bar {
   background-image: url(./images/navbar.jpg);
@@ -37,6 +37,7 @@ body {
     list-style: none;
     font-size: 35px;
     z-index: 1;
+    font-weight: 500;
   }
   > div {
     display: flex;
@@ -80,3 +81,4 @@ body {
 @import "./styles/link";
 @import "./styles/media";
 @import "./styles/scrollbar";
+@import "./styles/home";

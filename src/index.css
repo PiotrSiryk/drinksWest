@@ -15,9 +15,9 @@
 
 body {
   background-color: #2e1303;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .nav-bar {
@@ -56,6 +56,7 @@ body {
   list-style: none;
   font-size: 35px;
   z-index: 1;
+  font-weight: 500;
 }
 
 .nav-bar > div {
@@ -231,7 +232,7 @@ body {
   -o-border-image: url(./images//steel.jpg) 50;
      border-image: url(./images//steel.jpg) 50;
   width: 80%;
-  height: 95%;
+  min-height: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -242,11 +243,12 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  max-width: 1500px;
 }
 
 .display-poster {
-  max-width: 1300px;
   width: 90%;
+  max-width: 1300px;
   height: 90%;
   display: -ms-grid;
   display: grid;
@@ -275,7 +277,6 @@ body {
 }
 
 .display-base {
-  padding: 15px;
   text-align: center;
   position: relative;
   -ms-grid-column: 1;
@@ -433,11 +434,10 @@ body {
 @media screen and (max-width: 850px) {
   .board-open {
     width: 98%;
-    height: 98;
+    height: 98%;
   }
   .display-poster {
     width: 97%;
-    height: 97%;
     gap: 10px;
   }
 }
@@ -459,52 +459,8 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .display-poster > div {
-    padding: 10%;
-  }
 }
 
-/* @media screen and (max-width: 1400px) {
-  .board-open {
-    width: 90%;
-    height: 95%;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .board-open {
-    width: 98%;
-    margin: 0 1%;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .display-poster {
-    font-size: 15px;
-    display: flex;
-    flex-direction: column;
-    > div {
-      width: 100%;
-      height: 100%;
-      margin: 0 15px;
-    }
-  }
-  .board-open {
-    overflow-y: auto;
-  }
-}
-@media screen and (min-width: 1600px) {
-  .display-poster {
-    width: 100%;
-    font-size: 22px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 55px;
-    > div {
-      height: 90%;
-      width: 120%;
-    }
-  }
-} */
 .quotes-main {
   width: 100vw;
   min-height: 1000px;
@@ -687,6 +643,10 @@ section {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .main-container {
+    overflow-y: auto;
+    min-height: 80vh;
+  }
 }
 
 ::-webkit-scrollbar {
@@ -706,5 +666,22 @@ section {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #461d05;
+}
+
+.home > header {
+  background-image: url(./images/home.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 400px;
+  overflow-y: auto;
+}
+
+.thing-to-do {
+  width: 225px;
+  height: 500px;
+  color: wheat;
+  background-image: url(./images/paper2.jpg);
+  background-color: red;
 }
 /*# sourceMappingURL=index.css.map */

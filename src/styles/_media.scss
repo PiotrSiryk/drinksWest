@@ -46,4 +46,8 @@
   .nav-bar {
     justify-content: space-between;
   }
+  .main-container {
+    overflow-y: auto;
+    min-height: 80vh;
+  }
 }
