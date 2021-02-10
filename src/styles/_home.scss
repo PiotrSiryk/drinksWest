@@ -113,3 +113,53 @@ footer {
     );
   }
 }
+
+@media only screen and (max-width: 1300px) {
+  .home > * {
+    width: 95%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .home > * {
+    width: 95%;
+  }
+  .home > main {
+    display: grid;
+    grid: 1fr 1fr / 1fr 1fr;
+    gap: 10px;
+  }
+  .thing-to-do {
+    max-width: 100%;
+  }
+  .reservation > div > * {
+    font-size: 16px;
+    padding: 2px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .home > * {
+    width: 95%;
+  }
+  .home > main {
+    display: flex;
+    flex-direction: column;
+  }
+  .thing-to-do {
+    max-width: 100%;
+  }
+  .reservation > div {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    > div {
+      width: 100%;
+    }
+  }
+}

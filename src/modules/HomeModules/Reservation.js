@@ -5,6 +5,7 @@ export default function Reservation() {
     <div className="reservation">
       <h1>Reservations</h1>
       <div>
+        <input type="email" placeholder="Enter Your Email" />
         <input type="date" />
         <select id="cars" name="dsa">
           <option value="">Party Size</option>
