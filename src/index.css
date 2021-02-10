@@ -680,7 +680,7 @@ section {
   background-position: center;
   background-size: cover;
   width: 100vw;
-  height: 300px;
+  height: 250px;
   overflow-y: auto;
 }
 
@@ -872,6 +872,157 @@ footer {
   footer > div {
     width: 100%;
   }
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(./images/navbar.jpg);
+}
+
+.menu > header {
+  background-image: url(./images/food2.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 250px;
+}
+
+.menu > header > h1 {
+  margin: 35px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  min-height: 200px;
+  font-size: 150px;
+  font-family: western;
+  font-weight: 100;
+  color: #e6d6a9;
+}
+
+.menu-sections {
+  width: 80%;
+}
+
+.menu-sections > section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 35px 0;
+}
+
+.menu-sections > section > h3 {
+  position: relative;
+  font-family: western;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100px;
+  font-size: 40px;
+  font-family: western;
+  font-weight: 100;
+}
+
+.menu-sections > section > h3::before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 3px;
+  border-radius: 5px;
+  top: 0%;
+  background-color: #2e1303;
+}
+
+.menu-sections > section > h3::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 3px;
+  border-radius: 5px;
+  top: 100%;
+  background-color: #2e1303;
+}
+
+.menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu-list > div {
+  padding: 0 10%;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 25px 0;
+  gap: 25px;
+}
+
+.menu-list > div > img {
+  max-width: 50%;
+}
+
+.menu-list > div > div {
+  font-family: western;
+  font-size: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+
+.menu-list:nth-child(even) > div {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 @media screen and (max-width: 800px) {
