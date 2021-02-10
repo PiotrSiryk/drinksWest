@@ -11,7 +11,7 @@ export default function Menu() {
           <h3>Ribs</h3>
           <div>
             <img
-              src="https://www.centralmeats.com/pub/media/catalog/product/cache/image/600x430/e9c3970ab036de70892d86c6d221abfe/b/o/bone-in_beef_chuck_ribs.jpg"
+              src="https://www.thespruceeats.com/thmb/cOrfL1MrSMQwKX9adyrFHtclObI=/1331x998/smart/filters:no_upscale()/slow-grilled-beef-ribs-335856-Hero-5b8c4b33c9e77c007bc64595.jpg"
               alt=""
             />
             <div>
@@ -59,7 +59,7 @@ export default function Menu() {
           </div>
         </section>
         <section className="menu-list">
-          <h3>Steak</h3>
+          <h3>Burger</h3>
           <div>
             <img
               src="https://www.horecanet.pl/wp-content/uploads/2017/02/burgery-zdjecie-tytulowe.jpg"
