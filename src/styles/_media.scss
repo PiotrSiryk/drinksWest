@@ -31,6 +31,8 @@
     top: 65px;
     transform: none;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: flex-start;
     width: 100%;
     background-image: url(./images/navbar.jpg);
@@ -48,6 +50,10 @@
   }
   .main-container {
     overflow-y: auto;
-    min-height: 80vh;
+  }
+}
+@media screen and (max-width: 900px) {
+  .nav-item-list > li > a {
+    font-size: 33px;
   }
 }

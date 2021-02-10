@@ -5,16 +5,18 @@
   justify-content: center;
 }
 .quotes {
-  width: 80%;
+  width: 85%;
   margin: 25px 0 0 0;
   padding: 2% 0% 12% 0%;
-  min-height: 100px;
+  max-width: 1500px;
   display: grid;
   grid: repeat(auto-fill, 250px) / 1fr 1fr 1fr;
   position: relative;
   box-sizing: border-box;
   background-image: url(./images/wood.jpg);
   background-position: center;
+  border: 6px solid;
+  border-image: url(./images//steel.jpg) 50;
 }
 .photo {
   width: 80px;
@@ -30,8 +32,8 @@
   );
 }
 .person {
-  min-width: 200px;
-  max-width: 350px;
+  min-width: 250px;
+  max-width: 400px;
   display: flex;
   align-items: center;
   background-image: url(./images/paper2.jpg);
@@ -40,9 +42,9 @@
   color: black;
   font-family: beyond;
   font-style: italic;
-  font-size: 22px;
+  font-size: 20px;
   box-shadow: 2px 2px 5px black;
-  padding: 25px;
+  padding: 15px;
   transition: 300ms;
 
   * {
@@ -62,8 +64,32 @@
 .person:hover {
   transition: 500ms;
   box-shadow: 8px 8px 5px black;
-  filter: brightness(1.06);
+  filter: brightness(1.16);
 }
 section {
   position: relative;
+}
+
+@media only screen and (max-width: 1000px) {
+  .quotes {
+    grid: repeat(auto-fill, 250px) / 1fr 1fr;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .quotes {
+    grid: repeat(auto-fill, 150px) / 1fr;
+    width: 100%;
+    > section {
+      display: flex;
+      justify-content: center;
+      > div {
+        transform: none !important;
+        position: static !important;
+      }
+      > div:hover {
+        transform: scale(1.2) !important;
+      }
+    }
+  }
 }

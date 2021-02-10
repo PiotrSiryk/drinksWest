@@ -14,7 +14,7 @@
 }
 
 body {
-  background-color: #2e1303;
+  background-color: #e1d3b3;
   min-height: 100vh;
   width: 100vw;
   overflow: auto;
@@ -443,11 +443,11 @@ body {
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
   .board-open {
-    margin-top: 150px;
     width: 98%;
-    height: auto;
+    position: absolute;
+    top: 100px;
   }
   .display-poster {
     width: 97%;
@@ -475,10 +475,10 @@ body {
 }
 
 .quotes {
-  width: 80%;
+  width: 85%;
   margin: 25px 0 0 0;
   padding: 2% 0% 12% 0%;
-  min-height: 100px;
+  max-width: 1500px;
   display: -ms-grid;
   display: grid;
   grid: repeat(auto-fill, 250px)/1fr 1fr 1fr;
@@ -487,6 +487,9 @@ body {
           box-sizing: border-box;
   background-image: url(./images/wood.jpg);
   background-position: center;
+  border: 6px solid;
+  -o-border-image: url(./images//steel.jpg) 50;
+     border-image: url(./images//steel.jpg) 50;
 }
 
 .photo {
@@ -501,8 +504,8 @@ body {
 }
 
 .person {
-  min-width: 200px;
-  max-width: 350px;
+  min-width: 250px;
+  max-width: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -515,10 +518,10 @@ body {
   color: black;
   font-family: beyond;
   font-style: italic;
-  font-size: 22px;
+  font-size: 20px;
   -webkit-box-shadow: 2px 2px 5px black;
           box-shadow: 2px 2px 5px black;
-  padding: 25px;
+  padding: 15px;
   -webkit-transition: 300ms;
   transition: 300ms;
 }
@@ -546,12 +549,43 @@ body {
   transition: 500ms;
   -webkit-box-shadow: 8px 8px 5px black;
           box-shadow: 8px 8px 5px black;
-  -webkit-filter: brightness(1.06);
-          filter: brightness(1.06);
+  -webkit-filter: brightness(1.16);
+          filter: brightness(1.16);
 }
 
 section {
   position: relative;
+}
+
+@media only screen and (max-width: 1000px) {
+  .quotes {
+    grid: repeat(auto-fill, 250px)/1fr 1fr;
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .quotes {
+    grid: repeat(auto-fill, 150px)/1fr;
+    width: 100%;
+  }
+  .quotes > section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .quotes > section > div {
+    -webkit-transform: none !important;
+            transform: none !important;
+    position: static !important;
+  }
+  .quotes > section > div:hover {
+    -webkit-transform: scale(1.2) !important;
+            transform: scale(1.2) !important;
+  }
 }
 
 .link-list > li a {
@@ -580,75 +614,6 @@ section {
 
 .link-list > li a:active {
   color: #be4e0c;
-}
-
-@media screen and (max-width: 800px) {
-  .nav-btn {
-    display: inline-block;
-    position: absolute;
-    right: 10px;
-    width: 50px;
-    z-index: 3;
-    height: 50px;
-    background-color: #fcdd90;
-    border: 1px #8e3b09 solid;
-    cursor: pointer;
-    -webkit-transition: 500ms;
-    transition: 500ms;
-  }
-  .nav-btn:hover {
-    background-color: #ffd66f;
-    -webkit-transition: 500ms;
-    transition: 500ms;
-  }
-  .nav-item-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 15px;
-    -webkit-transform: translateY(-160px);
-            transform: translateY(-160px);
-    background: linear-gradient(120deg, #eee2c3, #d3c4a2);
-    width: 100%;
-    position: absolute;
-    z-index: -1;
-  }
-  .nav-item-open {
-    width: 100%;
-    position: absolute;
-    top: 65px;
-    -webkit-transform: none;
-            transform: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    width: 100%;
-    background-image: url(./images/navbar.jpg);
-    background-size: cover;
-    z-index: -1;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .company-name {
-    display: none;
-  }
-  .nav-bar {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .main-container {
-    overflow-y: auto;
-    min-height: 80vh;
-  }
 }
 
 ::-webkit-scrollbar {
@@ -715,7 +680,7 @@ section {
   background-position: center;
   background-size: cover;
   width: 100vw;
-  height: 400px;
+  height: 300px;
   overflow-y: auto;
 }
 
@@ -906,6 +871,87 @@ footer {
   }
   footer > div {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    width: 50px;
+    z-index: 3;
+    height: 50px;
+    background-color: #fcdd90;
+    border: 1px #8e3b09 solid;
+    cursor: pointer;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+  }
+  .nav-btn:hover {
+    background-color: #ffd66f;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+  }
+  .nav-item-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 15px;
+    -webkit-transform: translateY(-160px);
+            transform: translateY(-160px);
+    background: linear-gradient(120deg, #eee2c3, #d3c4a2);
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+  .nav-item-open {
+    width: 100%;
+    position: absolute;
+    top: 65px;
+    -webkit-transform: none;
+            transform: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 100%;
+    background-image: url(./images/navbar.jpg);
+    background-size: cover;
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .company-name {
+    display: none;
+  }
+  .nav-bar {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .main-container {
+    overflow-y: auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .nav-item-list > li > a {
+    font-size: 33px;
   }
 }
 /*# sourceMappingURL=index.css.map */

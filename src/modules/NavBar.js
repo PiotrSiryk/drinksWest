@@ -24,6 +24,9 @@ export default function NavBar() {
           <Link to="/drinks">Drinks</Link>
         </li>
         <li>
+          <Link to="/menu">Menu</Link>
+        </li>
+        <li>
           <Link to="/quotes">Funny</Link>
         </li>
       </ul>

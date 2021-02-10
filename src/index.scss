@@ -8,7 +8,8 @@ $dark-brown: #2e1303;
 @import "./styles/paperPolygon";
 
 body {
-  background-color: $dark-brown;
+  background-color: #e1d3b3;
+  // background-color: $dark-brown;
   min-height: 100vh;
   width: 100vw;
   overflow: auto;
@@ -80,6 +81,6 @@ body {
 @import "./styles/displayPoster";
 @import "./styles/quotes";
 @import "./styles/link";
-@import "./styles/media";
 @import "./styles/scrollbar";
 @import "./styles/home";
+@import "./styles/media";
