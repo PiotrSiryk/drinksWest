@@ -58,6 +58,22 @@ export default function Menu() {
             </div>
           </div>
         </section>
+        <section className="menu-list">
+          <h3>Steak</h3>
+          <div>
+            <img
+              src="https://www.horecanet.pl/wp-content/uploads/2017/02/burgery-zdjecie-tytulowe.jpg"
+              alt=""
+            />
+            <div>
+              <p>1. Standard -- 13.99$</p>
+              <p>2. Cheese -- 15.99$</p>
+              <p>3. Elk -- 21.99$</p>
+              <p>4. Turkey -- 21.99$</p>
+              <p>5. Bison -- 23.99$</p>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
   );
