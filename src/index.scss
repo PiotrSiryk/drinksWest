@@ -8,12 +8,14 @@ $dark-brown: #2e1303;
 @import "./styles/paperPolygon";
 
 body {
-  background-color: #e1d3b3;
-  // background-color: $dark-brown;
   min-height: 100vh;
   width: 100vw;
   overflow: auto;
   overflow-x: hidden;
+
+  background-image: url(./images/navbar.jpg);
+  background-size: cover;
+  background-position: center;
 }
 .nav-bar {
   background-image: url(./images/navbar.jpg);
@@ -73,6 +75,7 @@ body {
   width: 100vw;
   height: 90vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }

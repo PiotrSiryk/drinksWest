@@ -23,6 +23,7 @@ export default function Main() {
 
   return (
     <main className="main-container">
+      {/* <header className='drinks-header'></header> */}
       <div className={picked ? "board-open" : "board"}>
         {picked && <DisplayPoster props={{ drinks, setSearch, setPicked }} />}
         {!picked && (
